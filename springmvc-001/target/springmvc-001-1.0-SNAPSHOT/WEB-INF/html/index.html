@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>First Spring MVC!</title>
+</head>
+<body>
+    <a th:href = "@{/test}">heihei</a>
+    <br><br>
+    <a th:href = "@{/heihei}">heihei</a>
+
+<form th:action="@{/user/login}" method="post">
+    用户名：<input type="text" name="username"/><br>
+    密码： <input type="text" name="password"/><br>
+    <input type="submit" value="登录">
+</form>
+</body>
+</html>
